@@ -1,5 +1,6 @@
 function letterCombinations(input_digit) {
   var result=[];
+  input_digit = (input_digit.split(''))
 	var alpha={
 		'0':'0',
 		'1':'1',
@@ -24,8 +25,8 @@ function letterCombinations(input_digit) {
 			slate.pop();
 		}
 	}
-	dfs(0,digit[]);
+
+	dfs(0,input_digit,[]);
 	return result;
 }
-
 module.exports = letterCombinations;
